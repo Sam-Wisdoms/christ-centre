@@ -1,3 +1,27 @@
+const thursdayPrayerDiv281223 = document.createElement("div")
+
+const prayerScripture281223 = document.createElement("h2");
+prayerScriptureText = document.createTextNode("It is good to give thanks to the Lord, and to sing praises to Your name, O Most High; To declare Your loving kindness in the morning, And Your faithfulness every night, ( Psalm 92:1-2)")
+prayerScripture281223.appendChild(prayerScriptureText);
+console.log(prayerScripture281223)
+
+
+const purposeTitle = document.createElement("h1");
+purposeText = document.createTextNode("PRAYER");
+purposeTitle.appendChild(purposeText)
+console.log(purposeTitle)
+
+const prayerParag281223 = document.createElement("h5");
+paragText = document.createTextNode("Praise and thanksgiving be to Your name, O Jehovah. Great is Your faithfulness, for Your faithfulness and Your loving kindness endureth forever. Thank You Father for how far You have brought us on the journey of life, and in this year. Great things You have done for us O Jehovah and greater things You will do. For our trust is in You alone to lead and to guide us for every step on the journey of life. Preserve and protect us every step of the journey, and lead the way Lord, that Your Name will be praised and adored now and forever in Jesus Mighty Name, Amen.");
+prayerParag281223.appendChild(paragText)
+
+thursdayPrayerDiv281223.appendChild(prayerScripture281223);
+thursdayPrayerDiv281223.appendChild(purposeTitle);
+thursdayPrayerDiv281223.appendChild(prayerParag281223);
+
+document.body.appendChild(thursdayPrayerDiv281223)
+
+
 const friday291223Prayer = document.createElement("div")
 
 const prayerScripture291223 = document.createElement("h2");
