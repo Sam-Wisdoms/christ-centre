@@ -1,3 +1,29 @@
+// 01012023
+let mondayPrayerDiv010124 = document.createElement('div');
+
+let prayerScripture010124 = document.createElement('h2');
+prayerScripture = document.createTextNode("Enter his gates with thanksgiving and his courts with praise; give thanks to him and praise his name. For the Lord is good and his love endures forever; his faithfulness continues through all generations. (Psalm 100 : 4-5). Surely, Lord, you bless the righteous; you surround them with your favor as with a shield.(Psalm 5 : 12)");
+prayerScripture010124.appendChild(prayerScripture);
+console.log(prayerScripture010124);
+
+let purposeTitle010124 = document.createElement("h1")
+purposeText = document.createTextNode("PRAYER")
+purposeTitle010124.appendChild(purposeText);
+console.log(purposeTitle010124)
+
+let prayerParag010124 = document.createElement("h4");
+prayerParagText = document.createTextNode("Thanks and praise be to Your Holy name O Jehovah; for You are good and Your love endures forever and Your faithfulness continues through all generations. Thank You, Father, that by Your love, mercies and faithfulness we are counted among the witnesses of this year 2024. In this year O Lord, anoint our heads with oil for increased faith, hope, love, speed, increased joy, advancement, fulfillment, abundance, and surround us with Your great peace, favor and mercies as a shield. Fill our thoughts with heavenly wisdom, and annoint our feets with speed like never before. Let this year, O Lord, be a year, that we will take them that seek, hope, chant and wish our fall by surprise in Jesus Mighty Name I pray, Amen. I WISH YOU A HAPPY 🎊 2024!!!")
+prayerParag010124.appendChild(prayerParagText);
+console.log(prayerParag010124)
+
+mondayPrayerDiv010124.appendChild(prayerScripture010124);
+mondayPrayerDiv010124.appendChild(purposeTitle010124);
+mondayPrayerDiv010124.appendChild(prayerParag010124);
+
+document.body.appendChild(mondayPrayerDiv010124)
+console.log(mondayPrayerDiv010124)
+
+// 28122023
 const thursdayPrayerDiv281223 = document.createElement("div")
 
 const prayerScripture281223 = document.createElement("h2");
@@ -11,7 +37,7 @@ purposeText = document.createTextNode("PRAYER");
 purposeTitle.appendChild(purposeText)
 console.log(purposeTitle)
 
-const prayerParag281223 = document.createElement("h5");
+const prayerParag281223 = document.createElement("h4");
 paragText = document.createTextNode("Praise and thanksgiving be to Your name, O Jehovah. Great is Your faithfulness, for Your faithfulness and Your loving kindness endureth forever. Thank You Father for how far You have brought us on the journey of life, and in this year. Great things You have done for us O Jehovah and greater things You will do. For our trust is in You alone to lead and to guide us for every step on the journey of life. Preserve and protect us every step of the journey, and lead the way Lord, that Your Name will be praised and adored now and forever in Jesus Mighty Name, Amen.");
 prayerParag281223.appendChild(paragText)
 
@@ -21,7 +47,7 @@ thursdayPrayerDiv281223.appendChild(prayerParag281223);
 
 document.body.appendChild(thursdayPrayerDiv281223)
 
-
+// 29122023
 const friday291223Prayer = document.createElement("div")
 
 const prayerScripture291223 = document.createElement("h2");
@@ -44,7 +70,7 @@ document.body.appendChild(friday291223Prayer)
 
 
 
-
+// 30122023
 const saturday30122023Prayer = document.createElement('div')
 
 const prayerScripture301223 = document.createElement('h2')
