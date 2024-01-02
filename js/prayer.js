@@ -1,5 +1,8 @@
 // 020124
 let tuesdayPrayerDiv020124 = document.createElement('div');
+tuesdayPrayerDiv020124.style.textAlign = "center"
+// tuesdayPrayerDiv020124.style.width = "700px"
+
 
 let prayerScripture020124 = document.createElement('h2');
 prayerScriptureText = document.createTextNode("These are the blessings that will come upon you: Blessings in the city, Blessings in the field; Many children, Ample crops, Large flocks, and herds; Blessings of fruit and bread; Blessings when you come in, Blessings when you go out. (Deuteronomy 28:2-6)");
