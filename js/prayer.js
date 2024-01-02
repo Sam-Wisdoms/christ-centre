@@ -1,3 +1,26 @@
+// 030124
+let wednesdayPrayerDiv030124 = document.createElement("div");
+wednesdayPrayerDiv030124.style.textAlign = "center"
+
+let prayerScripture030124 = document.createElement("h2")
+prayerScripture = document.createTextNode("Fire goes before them and follows them on every side!....(Joel 2:3) ");
+prayerScripture030124.appendChild(prayerScripture);
+
+let purpose030124 = document.createElement("h1");
+purposeText = document.createTextNode("PRAYER");
+purpose030124.appendChild(purposeText);
+
+let prayerParag030124 = document.createElement("p");
+prayerParagText = document.createTextNode("As we journey this year O Lord, cause Your fire to go before me on every side. Preserve and protect me in my going and in my coming. According to Your promise O Father, give your angels charge over me, to keep me in all my ways in Jesus Mighty Name,  Amen!!!")
+prayerParag030124.appendChild(prayerParagText);
+
+wednesdayPrayerDiv030124.appendChild(prayerScripture030124);
+wednesdayPrayerDiv030124.appendChild(purpose030124);
+wednesdayPrayerDiv030124.appendChild(prayerParag030124);
+
+document.body.appendChild(wednesdayPrayerDiv030124)
+
+
 // 020124
 let tuesdayPrayerDiv020124 = document.createElement('div');
 tuesdayPrayerDiv020124.style.textAlign = "center"
