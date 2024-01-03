@@ -1,3 +1,39 @@
+// 040124
+let thursdayPrayerDiv040124 = document.createElement("div");
+thursdayPrayerDiv040124.style.textAlign = "center"
+// thursdayPrayerDiv040124.style.marginBottom = "10px"
+
+let prayerScripture040124 = document.createElement("h2");
+prayerScriptureText = document.createTextNode('Then Eli answered and said, "Go in peace, and the God of Israel grant your petition which you have asked of Him." And she said, "Let your maidservant find favor in your sight."... (1 Samuel 1 : 17 - 18)');
+prayerScripture040124.appendChild(prayerScriptureText)
+
+let purpose040124 = document.createElement("h1");
+purposeText = document.createTextNode("PRAYER");
+purpose040124.appendChild(purposeText);
+
+let prayerParag040124 = document.createElement("p");
+prayerParagText = document.createTextNode("O Lord God of heaven, grant my petitions according to Your plans, promises, and purpose concerning my destiny. Cause me to experience Your great peace and joy in this year. May I and my family find favor in Your sight at all times in Jesus' Name, Amen.");
+prayerParag040124.appendChild(prayerParagText);
+
+let shareButton040124 = document.createElement("button");
+shareButton040124.classList.add("class", "share")
+shareButton040124.innerText = "Share"
+shareButton040124.style.borderRadius = "10px"
+shareButton040124.style.color = "#f5f6fa";
+shareButton040124.style.backgroundColor = "green"
+shareButton040124.style.padding = "3px 3px"
+shareButton040124.style.margin = "2px 2px"
+shareButton040124.style.textAlign = "center"
+shareButton040124.style.width = "3%"
+
+
+thursdayPrayerDiv040124.appendChild(prayerScripture040124);
+thursdayPrayerDiv040124.appendChild(purpose040124);
+thursdayPrayerDiv040124.appendChild(prayerParag040124);
+thursdayPrayerDiv040124.appendChild(shareButton040124);
+
+document.body.appendChild(thursdayPrayerDiv040124)
+
 // 030124
 let wednesdayPrayerDiv030124 = document.createElement("div");
 wednesdayPrayerDiv030124.style.textAlign = "center"
