@@ -1,0 +1,50 @@
+.contact-section h1, h3{
+    text-align: center;
+    color: #273c75;
+}
+
+.request-form{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+.request-form-text {
+    display: block;
+    width: 80%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0;
+    background: #273c75;
+    padding: 20px 40px;
+    outline: none;
+    color: white;
+    transition: 0.5s;
+}
+
+.request-form-text:focus{
+    box-shadow: 0 0 10px 4px #34495e; 
+}
+
+textarea.request-form-text{
+    resize: none; 
+    height: 200px;
+}
+
+.request-form-btn{
+    float: right;
+    border: 0;
+    background: #273c75;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.request-form-btn:hover{
+    background-color: #2980b9;
+}
+
+
