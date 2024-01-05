@@ -1,3 +1,43 @@
+// 050125
+let fridayPrayerDiv050124 = document.createElement("section");
+fridayPrayerDiv050124.style.textAlign = "center";
+
+let prayerScripture050124 = document.createElement("h2");
+prayerScriptureText = document.createTextNode('He will guard the feet of His saints, but the wicked shall be silent in darkness. "For by strength no man shall prevail." The adversaries of the Lord shall be broken in pieces; from heaven, He will thunder against them. The Lord will judge the ends of the earth. "He will give strength to His king, and exalt the horn of His anointed." (1 Samuel 2 : 9 - 10)')
+prayerScripture050124.appendChild(prayerScriptureText);
+
+let purpose050124 = document.createElement("h1");
+purposeText = document.createTextNode("PRAYER");
+purpose050124.appendChild(purposeText);
+
+let prayerParag050124 = document.createElement("p");
+prayerParagText = document.createTextNode("Guard and guide my feet O Father, and grant me the wisdom not to deviate into a life without You and not to rely on my own strength. Lift up Your Holy hands O Lord, and give us Your children strength that is from You, that we may endure, prevail and accomplish great results. Exalt the horns of Your children, and anoint our heads and our feets with the oil of speed, gladness, peace and wisdom for great results in Jesus, Mighty Name, Amen.")
+prayerParag050124.appendChild(prayerParagText)
+
+let shareButton050124 = document.createElement("button");
+shareButton050124.classList.add("class", "share");
+shareButton050124.innerText = "Share";
+shareButton050124.style.borderRadius = "10px";
+shareButton050124.style.color = "#f5f6fa";
+shareButton050124.style.background = "green";
+shareButton050124.style.padding = "3px";
+shareButton050124.style.margin = "5px 5px"
+shareButton050124.style.fontSize = "2rem";
+shareButton050124.style.textAlign = "center";
+shareButton050124.style.width = "5%"
+
+
+
+
+
+
+fridayPrayerDiv050124.appendChild(prayerScripture050124);
+fridayPrayerDiv050124.appendChild(purpose050124);
+fridayPrayerDiv050124.appendChild(prayerParag050124);
+fridayPrayerDiv050124.append(shareButton050124);
+
+document.body.appendChild(fridayPrayerDiv050124);
+
 // 040124
 let thursdayPrayerDiv040124 = document.createElement("div");
 thursdayPrayerDiv040124.style.textAlign = "center"
@@ -24,7 +64,9 @@ shareButton040124.style.backgroundColor = "green"
 shareButton040124.style.padding = "3px 3px"
 shareButton040124.style.margin = "2px 2px"
 shareButton040124.style.textAlign = "center"
-shareButton040124.style.width = "3%"
+shareButton040124.style.width = "5%"
+shareButton040124.style.float = "center"
+shareButton040124.style.fontSize = "2rem"
 
 
 thursdayPrayerDiv040124.appendChild(prayerScripture040124);
@@ -172,6 +214,6 @@ parag.appendChild(paragText)
 
 saturday30122023Prayer.appendChild(prayerScripture301223)
 saturday30122023Prayer.appendChild(purpose)
-saturday30122023Prayer.appendChild(parag) 
+saturday30122023Prayer.appendChild(parag)
 
 document.body.appendChild(saturday30122023Prayer)
