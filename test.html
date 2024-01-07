@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="prayer-container" id="container">
+        <ul id="container-items">
+            <!-- Prayer Cards -->
+            <li>
+                <h2 class="prayer-scripture">Scripture1</h2>
+                <h1 class="prayer-title">Prayer</h1>
+                <p class="prayer-text">Actual Prayer</p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="letters">
+        <!-- Numbers go here -->
+    </div>
+
+    <script>
+        let listItems = document.getElementById("container-items")
+
+        let newLi = document.createElement("li")
+
+        newLiTitle = document.createElement('h2');
+        newLiTitle.classList.add("prayer-scripture")
+        titleScripture = document.createTextNode("Scripture2")
+        newLiTitle.appendChild(titleScripture)
+
+        newPrayerTitle = document.createElement("h1");
+        newPrayerTitle.classList.add("prayer-title")
+        prayerText = document.createTextNode("Prayer2");
+        newPrayerTitle.appendChild(prayerText);
+
+        newPrayerParagTitle = document.createElement("p")
+        newPrayerParagTitle.classList.add("prayer-text")
+        prayerParagText = document.createTextNode("Actual Prayer2");
+        newPrayerParagTitle.appendChild(prayerParagText);
+
+        newLi.appendChild(newLiTitle)
+        newLi.appendChild(newPrayerTitle)
+        newLi.appendChild(newPrayerParagTitle)
+
+        listItems.appendChild(newLi)
+
+        let lettersArray = ['v', 'w', 'x', 'y', 'z', 's']
+
+        let lettersDiv = document.querySelector('.letters')
+
+        let parag = document.createElement("p")
+        paragText = document.createTextNode('A')
+        parag.appendChild(paragText)
+        lettersDiv.appendChild(parag)
+
+        for (let i = 0; i < lettersArray.length; i++) {
+            let parag = document.createElement("p");
+            paragText = document.createTextNode(lettersArray[i])
+            parag.appendChild(paragText)
+            lettersDiv.appendChild(parag)
+        }
+
+        let myArray = [
+            {
+                scripture: "day1",
+                prayer: "prayer1",
+                paragraph: "parag1"
+            },
+            {
+                scripture: "day2",
+                prayer: "prayer2",
+                paragraph: "parag2"
+            },
+
+            {
+                scripture: "day3",
+                prayer: "prayer3",
+                paragraph: "parag3"
+            },
+
+            {
+                scripture: "day4",
+                prayer: "prayer4",
+                paragraph: "parag4"
+            },
+
+            {
+                scripture: "day5",
+                prayer: "prayer5",
+                paragraph: "parag5"
+            },
+
+            {
+                scripture: "day6",
+                prayer: "prayer6",
+                paragraph: "parag6"
+            }
+
+        ]
+
+
+        for (let i = 0; i < myArray.length; i++) {
+            let newLi = document.createElement("li")
+
+            newLiTitle = document.createElement('h2');
+            newLiTitle.classList.add("prayer-scripture")
+            titleScripture = document.createTextNode(myArray[i].scripture)
+            newLiTitle.appendChild(titleScripture)
+
+            newPrayerTitle = document.createElement("h1");
+            newPrayerTitle.classList.add("prayer-title")
+            prayerText = document.createTextNode(myArray[i].prayer);
+            newPrayerTitle.appendChild(prayerText);
+
+            newPrayerParagTitle = document.createElement("p")
+            newPrayerParagTitle.classList.add("prayer-text")
+            prayerParagText = document.createTextNode(myArray[i].paragraph);
+            newPrayerParagTitle.appendChild(prayerParagText);
+
+            newLi.appendChild(newLiTitle)
+            newLi.appendChild(newPrayerTitle)
+            newLi.appendChild(newPrayerParagTitle)
+
+            listItems.appendChild(newLi)
+        }
+
+
+    </script>
+</body>
+
+</html>

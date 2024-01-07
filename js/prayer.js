@@ -1,3 +1,85 @@
+// 070124 
+let sundayPrayerDiv070124 = document.createElement("div");
+sundayPrayerDiv070124.style.textAlign = "center"
+sundayPrayerDiv070124.style.maxWidth = "600px";
+sundayPrayerDiv070124.style.margin = "auto"
+
+
+let prayerScripture070124 = document.createElement("h2");
+prayerScriptureText = document.createTextNode('And when the ark of the covenant of the Lord came into the camp, all Israel shouted so loudly that the earth shook. Now when the Philistines heard the noise of the shout, they said, "What does the sound of this great shout in the camp of the Hebrews mean?" Then they understood that the ark of the Lord had come into the camp. So the Philistines were afraid, for they said, "God has come into the camp!" And they said, "Woe to us! For such a thing has never happened before." Woe to us! Who will deliver us from the hand of these Mighty gods? These are the gods who struck the Egyptians with all the plagues in the wilderness." ( 1 Samuel 4 : 5 - 8 )')
+prayerScripture070124.appendChild(prayerScriptureText);
+
+let purpose070124 = document.createElement("h1");
+purposeText = document.createTextNode("PRAYER");
+purpose070124.appendChild(purposeText);
+purpose070124.style.marginTop = "15px"
+purpose070124.style.marginBottom = "15px"
+
+let prayerParag070124 = document.createElement("p");
+prayerText = document.createTextNode("All powers in heaven and on earth belong to You alone O Father. In Your hands, I continually commit myself and my family. As we journey this Year and the years to come O Lord, be in our camp at all times, deliver us from the snares of the fowler, guide our steps, and let your will and purpose prevail in our lives in Jesus Mighty Name, Amen.");
+prayerParag070124.appendChild(prayerText);
+
+let shareButton070124 = document.createElement("button");
+shareButton070124.classList.add("share")
+shareButton070124.innerText = "Share",
+console.log('test')
+shareButton070124.style.marginBottom = "30px";
+console.log('test')
+shareButton070124.style.color = "#f5f6fa"
+shareButton070124.style.background = "#5dc2b8";
+shareButton070124.style.borderRadius = "15px";
+shareButton070124.style.margin = "5px 5px"
+shareButton070124.style.padding = "3px"
+shareButton070124.style.width = "10%";
+shareButton070124.style.fontSize = "1rem"
+
+
+sundayPrayerDiv070124.appendChild(prayerScripture070124);
+sundayPrayerDiv070124.appendChild(purpose070124);
+sundayPrayerDiv070124.appendChild(prayerParag070124);
+sundayPrayerDiv070124.appendChild(shareButton070124);
+
+document.body.appendChild(sundayPrayerDiv070124);
+
+
+// 060124
+let saturdayPrayerDiv060124 = document.createElement("div");
+saturdayPrayerDiv060124.style.textAlign = "center";
+
+let prayerScripture060124 = document.createElement("h2")
+prayerScriptureText = document.createTextNode('Then the Lord called yet again "Samuel!" so Samuel arose and went to Eli, and said, "Here I am, for you called me." He answered, "I did not call, my son; lie down again." (Now, Samuel did not yet know the Lord, nor was the Word of the Lord yet revealed to him). (1 Samuel 3:6-7)');
+prayerScripture060124.appendChild(prayerScriptureText);
+prayerScripture060124.style.maxWidth = "25%"
+prayerScripture060124.style.margin = "auto"
+
+
+let purpose060124 = document.createElement("h1");
+purposeText = document.createTextNode("PRAYER");
+purpose060124.appendChild(purposeText);
+
+let prayerParag060124 = document.createElement("p");
+prayerParagText = document.createTextNode("Thank You Father, for Your Word today. This I ask of You O Father, that grant me the wisdom, the willingness and the desire that I may seek You more and more, and that I may get to know and recognize Your voice at all times when You speak. And grant me a willing and an obedient heart, that I shall obey Your instructions always in Jesus Mighty name, Amen.");
+prayerParag060124.appendChild(prayerParagText)
+
+let shareButton060124 = document.createElement("button");
+shareButton060124.classList.add("class", "Share");
+shareButton060124.innerText = "Share";
+shareButton060124.style.borderRadius = '15px';
+shareButton060124.style.color = "#f5f6fa";
+shareButton060124.style.background = "#5dc2b8";
+shareButton060124.style.margin = "5px 5px";
+shareButton060124.style.padding = "3px";
+shareButton060124.style.textAlign = "center";
+shareButton060124.style.width = "3%";
+shareButton060124.style.fontSize = "1rem"
+
+saturdayPrayerDiv060124.appendChild(prayerScripture060124);
+saturdayPrayerDiv060124.appendChild(purpose060124);
+saturdayPrayerDiv060124.appendChild(prayerParag060124);
+saturdayPrayerDiv060124.appendChild(shareButton060124)
+
+document.body.appendChild(saturdayPrayerDiv060124);
+
 // 050125
 let fridayPrayerDiv050124 = document.createElement("section");
 fridayPrayerDiv050124.style.textAlign = "center";
@@ -17,17 +99,14 @@ prayerParag050124.appendChild(prayerParagText)
 let shareButton050124 = document.createElement("button");
 shareButton050124.classList.add("class", "share");
 shareButton050124.innerText = "Share";
-shareButton050124.style.borderRadius = "10px";
+shareButton050124.style.borderRadius = "15px";
 shareButton050124.style.color = "#f5f6fa";
-shareButton050124.style.background = "green";
+shareButton050124.style.background = "#5dc2b8";
 shareButton050124.style.padding = "3px";
 shareButton050124.style.margin = "5px 5px"
-shareButton050124.style.fontSize = "2rem";
+shareButton050124.style.fontSize = "1rem";
 shareButton050124.style.textAlign = "center";
-shareButton050124.style.width = "5%"
-
-
-
+shareButton050124.style.width = "3%"
 
 
 
@@ -58,15 +137,15 @@ prayerParag040124.appendChild(prayerParagText);
 let shareButton040124 = document.createElement("button");
 shareButton040124.classList.add("class", "share")
 shareButton040124.innerText = "Share"
-shareButton040124.style.borderRadius = "10px"
+shareButton040124.style.borderRadius = "15px"
 shareButton040124.style.color = "#f5f6fa";
-shareButton040124.style.backgroundColor = "green"
+shareButton040124.style.backgroundColor = "#5dc2b8"
 shareButton040124.style.padding = "3px 3px"
 shareButton040124.style.margin = "2px 2px"
 shareButton040124.style.textAlign = "center"
-shareButton040124.style.width = "5%"
+shareButton040124.style.width = "3%"
 shareButton040124.style.float = "center"
-shareButton040124.style.fontSize = "2rem"
+shareButton040124.style.fontSize = "1rem"
 
 
 thursdayPrayerDiv040124.appendChild(prayerScripture040124);

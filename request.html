@@ -10,20 +10,21 @@
     <div class="contact-section">
         <h1>Make a Prayer Request</h1>
         <hr>
-        <h3>Are there issues you need prayer support about? We are glad to support. Please let us know what we can support with prayer about in the contact form below.</h3>
+        <h3>Are there issues you need prayer support about? We are glad to support. Please let us know what we can support with in the contact form below.</h3>
         <hr>
         <form action="" class="request-form">
-            <input type="text" class="request-form-text" placeholder="Your name">
-            <input type="text" class="request-form-text" placeholder="Email Address">
-            <input type="text" class="request-form-text" placeholder="Country of Residence">
-            <input type="text" class="request-form-text" placeholder="Phone Number">
-            <textarea name="" id="" cols="30" rows="10" class="request-form-text" placeholder="Please enter your prayer request in this field" required></textarea>
+            <input type="text" id="name" class="request-form-text" placeholder="Your name">
+            <input type="text" id="email" class="request-form-text" placeholder="Email Address">
+            <input type="text" id="country" class="request-form-text" placeholder="Country of Residence">
+            <input type="text" id="contact" class="request-form-text" placeholder="Phone Number">
+            <textarea id="text" cols="30" rows="10" class="request-form-text" placeholder="Please enter your prayer request in this field" required></textarea>
             <input type="submit" class="request-form-btn" value="Send">
         </form>
 
         </div>
     </div>
-    
-    <!-- <script src="./js/prayer.js"></script> -->
+    <script src="https://smtpjs.com/v3/smtp.js">
+</script>
+    <script src="./js/request.js"></script>
 </body>
 </html>
