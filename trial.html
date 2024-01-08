@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="my-container"></div>
+
+    <script>
+let myCardsContainer = document.querySelector(".my-container")
+
+let myPrayers = [
+    {
+        scripture: 'And we desire that each one of you show the same diligence to the full assurance of hope until the end, that you do not become sluggish, but imitate those who through faith and patience inherit the promise. (Hebrews 6 : 11-12)',
+
+        prayer: 'Thank You gracious Father for the counsel of Your Word. Give me strength to persevere, and the hope, to keep my trust in You in all circumstances. Grant me wisdom, that I may pursue diligence, and that I may not become sluggish in any way but rather, I shall exercise patience as I keep my faith alive in You alone for the fulfillment of Your promises concerning every step of my destiny in Jesus Mighty Name, Amen.'
+
+    },
+
+    {
+        scripture: 'Your own ears will hear him. Right behind you a voice will say, “This is the way you should go”, whether to the right or to the left. (Isaiah 30:21)',
+
+        prayer: 'Please help me O Lord that I may hear Your voice loud and clear with my own ears. And grant me a willing heart to follow, submit and obey your instructions.Thank You, dear Lord Jesus, Amen.'
+    },
+
+    {
+scripture: 'You then, my son, be strong in the grace that is in Christ Jesus. (2Timothy 2:1)',
+
+prayer: 'Gracious, loving and kind Father I thank You for the privileges You gave me through Your  dear son. Grant me wisdom O Father, that I may diligently seek You and that I may be strengthened in Your grace and Your might. Make me victorious in all that I do, that the praise and the glory may be returned to you in Jesus Mighty name, Amen.'
+    },
+
+    {
+        scripture: 'And how can anyone preach unless they are sent? As it is written: "how beautiful are the feet of those who bring good news!" But not all the Israelites accepted the good news. For Isaiah says, \'Lord, who has believed our message?\'Consequently, faith comes from hearing the message, and the message is heard through the Word about Christ. But I ask: did they not hear? Of course they did: (Romans 10: 15-18)',
+
+        prayer: "King of kings and Lord of lords, perfect my ways and make me a vessel that pursue Godliness with true fear of You in all my dealings. Honor my steps and make me an agent of positive change O Lord, and a carrier of good news.Grant me wisdom, and deepen my understanding and discernment in all circumstances, that I may not be taken by surprise by the devices of the enemy. Make me victorious in all circumstances in the Mighty name of Jesus Christ of Nazareth. Amen."
+    },
+
+    {
+        scripture: 'Open up, ancient gates! Open up, ancient doors, and let the King of glory enter. (Psalm 24:9)',
+
+        prayer: 'Dear Lord Jesus, I open the door to my heart that You may be fully established and completely have Your way in me. In my seasons of joy and sadness, take control over my life Father, lead me, guide me, direct my paths and have Your way in me, that I may be perfect and complete lacking nothing according to Your promises concerning me. Grant me wisdom, that I may not rely on my own stregth alone for the battles on the journey of life. Have Your way in me Father, that the praise and the glory shall be returned to You alone in Jesus Mighty Name, Amen!'
+    }
+
+]
+
+for(let i = 0; i < myPrayers.length; i++ ){
+    let sundayPrayerDiv070124 = document.createElement("div");
+        sundayPrayerDiv070124.style.textAlign = "center"
+
+
+        let prayerScripture070124 = document.createElement("h2");
+        prayerScriptureText = document.createTextNode(myPrayers[i].scripture)
+        prayerScripture070124.appendChild(prayerScriptureText);
+
+        let purpose070124 = document.createElement("h1");
+        purposeText = document.createTextNode("PRAYER");
+        purpose070124.appendChild(purposeText);
+        purpose070124.style.marginTop = "15px"
+        purpose070124.style.marginBottom = "15px"
+        purpose070124.style.background = "orange"
+
+        let prayerParag070124 = document.createElement("p");
+        prayerText = document.createTextNode(myPrayers[i].prayer);
+        prayerParag070124.appendChild(prayerText);
+
+        let shareButton070124 = document.createElement("button");
+        shareButton070124.classList.add("share")
+        shareButton070124.innerText = "Share",
+       
+        shareButton070124.style.marginBottom = "30px";
+        shareButton070124.style.color = "#f5f6fa"
+        shareButton070124.style.background = "#5dc2b8";
+        shareButton070124.style.borderRadius = "15px";
+        shareButton070124.style.margin = "5px 5px"
+        shareButton070124.style.padding = "3px"
+        shareButton070124.style.width = "3%";
+        shareButton070124.style.fontSize = "1rem"
+
+
+        sundayPrayerDiv070124.appendChild(prayerScripture070124);
+        sundayPrayerDiv070124.appendChild(purpose070124);
+        sundayPrayerDiv070124.appendChild(prayerParag070124);
+        sundayPrayerDiv070124.appendChild(shareButton070124);
+
+        myCardsContainer.appendChild(sundayPrayerDiv070124);
+}
+    </script>
+</body>
+</html>

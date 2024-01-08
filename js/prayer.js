@@ -1,8 +1,9 @@
+let dailyCards = document.getElementById("prayer-cards")
+
+
 // 070124 
 let sundayPrayerDiv070124 = document.createElement("div");
 sundayPrayerDiv070124.style.textAlign = "center"
-sundayPrayerDiv070124.style.maxWidth = "600px";
-sundayPrayerDiv070124.style.margin = "auto"
 
 
 let prayerScripture070124 = document.createElement("h2");
@@ -30,7 +31,7 @@ shareButton070124.style.background = "#5dc2b8";
 shareButton070124.style.borderRadius = "15px";
 shareButton070124.style.margin = "5px 5px"
 shareButton070124.style.padding = "3px"
-shareButton070124.style.width = "10%";
+shareButton070124.style.width = "3%";
 shareButton070124.style.fontSize = "1rem"
 
 
@@ -49,8 +50,7 @@ saturdayPrayerDiv060124.style.textAlign = "center";
 let prayerScripture060124 = document.createElement("h2")
 prayerScriptureText = document.createTextNode('Then the Lord called yet again "Samuel!" so Samuel arose and went to Eli, and said, "Here I am, for you called me." He answered, "I did not call, my son; lie down again." (Now, Samuel did not yet know the Lord, nor was the Word of the Lord yet revealed to him). (1 Samuel 3:6-7)');
 prayerScripture060124.appendChild(prayerScriptureText);
-prayerScripture060124.style.maxWidth = "25%"
-prayerScripture060124.style.margin = "auto"
+
 
 
 let purpose060124 = document.createElement("h1");

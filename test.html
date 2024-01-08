@@ -8,6 +8,8 @@
 </head>
 
 <body>
+    <div class="prayer-folder"></div>
+
     <div class="prayer-container" id="container">
         <ul id="container-items">
             <!-- Prayer Cards -->
@@ -24,6 +26,8 @@
     </div>
 
     <script>
+        let prayerFolder = document.querySelector(".prayer-folder")
+
         let listItems = document.getElementById("container-items")
 
         let newLi = document.createElement("li")
@@ -99,13 +103,21 @@
                 scripture: "day6",
                 prayer: "prayer6",
                 paragraph: "parag6"
+            },
+
+            {
+                scripture: "sunday Scrip",
+                prayer: "sunday Prayer",
+                paragraph: "Sunday parag"
             }
+
 
         ]
 
 
         for (let i = 0; i < myArray.length; i++) {
             let newLi = document.createElement("li")
+            newLi.style.background = "blue"
 
             newLiTitle = document.createElement('h2');
             newLiTitle.classList.add("prayer-scripture")
@@ -129,6 +141,59 @@
             listItems.appendChild(newLi)
         }
 
+        let myPrayerArray = [
+            {
+                scripture: 'And when the ark of the covenant of the Lord came into the camp, all Israel shouted so loudly that the earth shook. Now when the Philistines heard the noise of the shout, they said, "What does the sound of this great shout in the camp of the Hebrews mean?" Then they understood that the ark of the Lord had come into the camp. So the Philistines were afraid, for they said, "God has come into the camp!" And they said, "Woe to us! For such a thing has never happened before." Woe to us! Who will deliver us from the hand of these Mighty gods? These are the gods who struck the Egyptians with all the plagues in the wilderness." ( 1 Samuel 4 : 5 - 8 )',
+
+                prayer: 'All powers in heaven and on earth belong to You alone O Father. In Your hands, I continually commit myself and my family. As we journey this Year and the years to come O Lord, be in our camp at all times, deliver us from the snares of the fowler, guide our steps, and let your will and purpose prevail in our lives in Jesus Mighty Name, Amen.'
+            }
+        ]
+
+        for(let i = 0; i < myPrayerArray.length; i++){
+            let sundayPrayerDiv070124 = document.createElement("div");
+        sundayPrayerDiv070124.style.textAlign = "center"
+
+
+        let prayerScripture070124 = document.createElement("h2");
+        prayerScriptureText = document.createTextNode(myPrayerArray[i].scripture)
+        prayerScripture070124.appendChild(prayerScriptureText);
+
+        let purpose070124 = document.createElement("h1");
+        purposeText = document.createTextNode("PRAYER");
+        purpose070124.appendChild(purposeText);
+        purpose070124.style.marginTop = "15px"
+        purpose070124.style.marginBottom = "15px"
+
+        let prayerParag070124 = document.createElement("p");
+        prayerText = document.createTextNode(myPrayerArray[i].prayer);
+        prayerParag070124.appendChild(prayerText);
+
+        let shareButton070124 = document.createElement("button");
+        shareButton070124.classList.add("share")
+        shareButton070124.innerText = "Share",
+       
+        shareButton070124.style.marginBottom = "30px";
+        console.log('test')
+        shareButton070124.style.color = "#f5f6fa"
+        shareButton070124.style.background = "#5dc2b8";
+        shareButton070124.style.borderRadius = "15px";
+        shareButton070124.style.margin = "5px 5px"
+        shareButton070124.style.padding = "3px"
+        shareButton070124.style.width = "3%";
+        shareButton070124.style.fontSize = "1rem"
+
+
+        sundayPrayerDiv070124.appendChild(prayerScripture070124);
+        sundayPrayerDiv070124.appendChild(purpose070124);
+        sundayPrayerDiv070124.appendChild(prayerParag070124);
+        sundayPrayerDiv070124.appendChild(shareButton070124);
+
+        prayerFolder.appendChild(sundayPrayerDiv070124);
+
+
+        }
+
+        
 
     </script>
 </body>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christ Center</title>
+</head>
+<body>
+    <div class="card-container"></div>
+    
+
+    <script>
+        let cardContainer = document.querySelector('.card-container');
+
+        // apply styles to the card container
+        cardContainer.style.display = "flex";
+        cardContainer.style.justifyContent = "center";
+        cardContainer.style.flexWrap = "wrap"
+
+
+    // Styles that apply to the body of the document
+            document.body.style.margin = '100px'
+            document.body.style.padding = '0px'
+            document.body.style.boxSizing = 'border-box'
+            document.body.style.fontFamily = "sans-serif"
+
+        // create array of objects for populating prayers
+        let myJanuaryPrayersArray = [
+            {
+                scripture: 'But the hand of the Lord was heavy on the people of Ashdod, and He ravaged them and struck them with tumors, both Ashdod and its territory. And when the men of Ashdod saw how it was, they said, "The ark of the God of Israel must not remain with us, for His hand is harsh toward us and Dagon our god." ( 1 Samuel 5:6-7)',
+
+                prayer: "King of kings and Lord of lords, let your hand be mighty upon anyone who wishes and seeks evil for your children. And let any priest that has been contracted for evil against Your children fall flat like Dagon before the ark of God. This I declare O Lord, that affliction and evil shall not befall the household of Your children in Jesus' Mighty Name, Amen."
+            },
+
+            {
+                scripture: 'Enter his gates with thanksgiving and his courts with praise; give thanks to him and praise his name. For the Lord is good and his love endures forever; his faithfulness continues through all generations. (Psalm 100 : 4-5). Surely, Lord, you bless the righteous; you surround them with your favor as with a shield.(Psalm 5 : 12)',
+
+                prayer: 'Thanks and praise be to Your Holy name O Jehovah; for You are good and Your love endures forever and Your faithfulness continues through all generations. Thank You, Father, that by Your love, mercies and faithfulness we are counted among the witnesses of this year 2024. In this year O Lord, anoint our heads with oil for increased faith, hope, love, speed, increased joy, advancement, fulfillment, abundance, and surround us with Your great peace, favor and mercies as a shield. Fill our thoughts with heavenly wisdom, and annoint our feets with speed like never before. Let this year, O Lord, be a year, that we will take them that seek, hope, chant and wish our fall by surprise in Jesus Mighty Name I pray, Amen. I WISH YOU A HAPPY 🎊 2024!!!'
+            },
+
+            {
+                scripture: 'These are the blessings that will come upon you: Blessings in the city, Blessings in the field; Many children, Ample crops, Large flocks, and herds; Blessings of fruit and bread; Blessings when you come in, Blessings when you go out. (Deuteronomy 28:2-6)',
+
+                prayer: 'O Lord, God of heaven, cause me to experience these blessings according to Your promise. Let my going out be blessed, and let my coming in be blessed in the mighty name of Jesus Christ of Nazareth, Amen.'
+            },
+
+            {
+                scripture: 'Fire goes before them and follows them on every side!....(Joel 2:3',
+
+                prayer: 'As we journey this year O Lord, cause Your fire to go before me on every side. Preserve and protect me in my going and in my coming. According to Your promise O Father, give your angels charge over me, to keep me in all my ways in Jesus Mighty Name,  Amen!!!"'
+            },
+
+            {
+                scripture: 'Then Eli answered and said, "Go in peace, and the God of Israel grant your petition which you have asked of Him." And she said, "Let your maidservant find favor in your sight."... (1 Samuel 1 : 17 - 18)',
+
+                prayer: "O Lord God of heaven, grant my petitions according to Your plans, promises, and purpose concerning my destiny. Cause me to experience Your great peace and joy in this year. May I and my family find favor in Your sight at all times in Jesus' Name, Amen."
+            },
+
+            {
+                scripture: 'He will guard the feet of His saints, but the wicked shall be silent in darkness. "For by strength no man shall prevail." The adversaries of the Lord shall be broken in pieces; from heaven, He will thunder against them. The Lord will judge the ends of the earth. "He will give strength to His king, and exalt the horn of His anointed." (1 Samuel 2 : 9 - 10)',
+
+                prayer: 'Guard and guide my feet O Father, and grant me the wisdom not to deviate into a life without You and not to rely on my own strength. Lift up Your Holy hands O Lord, and give us Your children strength that is from You, that we may endure, prevail and accomplish great results. Exalt the horns of Your children, and anoint our heads and our feets with the oil of speed, gladness, peace and wisdom for great results in Jesus, Mighty Name, Amen.'
+            },
+
+            {
+                scripture: 'Then the Lord called yet again "Samuel!" so Samuel arose and went to Eli, and said, "Here I am, for you called me." He answered, "I did not call, my son; lie down again." (Now, Samuel did not yet know the Lord, nor was the Word of the Lord yet revealed to him). (1 Samuel 3:6-7)',
+
+                prayer: 'Thank You Father, for Your Word today. This I ask of You O Father, that grant me the wisdom, the willingness and the desire that I may seek You more and more, and that I may get to know and recognize Your voice at all times when You speak. And grant me a willing and an obedient heart, that I shall obey Your instructions always in Jesus Mighty name, Amen.'
+            },
+
+            {
+                scripture: 'And when the ark of the covenant of the Lord came into the camp, all Israel shouted so loudly that the earth shook. Now when the Philistines heard the noise of the shout, they said, "What does the sound of this great shout in the camp of the Hebrews mean?" Then they understood that the ark of the Lord had come into the camp. So the Philistines were afraid, for they said, "God has come into the camp!" And they said, "Woe to us! For such a thing has never happened before." Woe to us! Who will deliver us from the hand of these Mighty gods? These are the gods who struck the Egyptians with all the plagues in the wilderness." ( 1 Samuel 4 : 5 - 8 )',
+
+                prayer: 'All powers in heaven and on earth belong to You alone O Father. In Your hands, I continually commit myself and my family. As we journey this Year and the years to come O Lord, be in our camp at all times, deliver us from the snares of the fowler, guide our steps, and let your will and purpose prevail in our lives in Jesus Mighty Name, Amen.'
+            },
+
+
+        ]
+
+        for(let i = 0; i < myJanuaryPrayersArray.length; i++ ){
+
+            let day1Prayer = document.createElement('div')
+            day1Prayer.classList.add('card')
+            day1Prayer.style.textAlign = 'center'
+
+            let imageEl = document.createElement('img');
+            imageEl.src = 'assets/images/image1.jpg'
+            day1Prayer.appendChild(imageEl)
+
+            imageEl.style.width = '100%';
+            imageEl.style.height = '30%'
+
+            if(day1Prayer.classList.contains('card')){
+                day1Prayer.style.width = '500px';
+                day1Prayer.style.background = '#f0f0f0'
+                day1Prayer.style.borderRadius = '8px'
+                day1Prayer.style.overflow = 'hidden'
+                day1Prayer.style.boxShadow = '0px 2px 4px rgba(0,0,0,0.2)'
+                day1Prayer.style.margin = '20px'
+            }
+            
+            let day1PrayerScriptureEl = document.createElement('h2');
+            day1prayerScripture = document.createTextNode(myJanuaryPrayersArray[i].scripture);
+            day1PrayerScriptureEl.appendChild(day1prayerScripture);
+
+            // Apply styles to the scripture el
+            day1PrayerScriptureEl.style.padding = '15px'
+            day1PrayerScriptureEl.style.fontSize = '20px'
+            day1PrayerScriptureEl.style.marginBottom = '8px'
+
+            let purposeEl = document.createElement('h1')
+            purposeText = document.createTextNode('PRAYER');
+            purposeEl.appendChild(purposeText);
+
+            let hrStyle = document.createElement('hr')
+            hrStyle.style.width = '30%'
+            purposeEl.append(hrStyle)
+
+            let day1PrayerParagEl = document.createElement('h4')
+            prayerParagText = document.createTextNode(myJanuaryPrayersArray[i].prayer)
+            day1PrayerParagEl.appendChild(prayerParagText);
+
+            // Apply Styles to prayer Parag
+            day1PrayerParagEl.style.color = '#498'
+            day1PrayerParagEl.style.fontSize = '1.3'
+            day1PrayerParagEl.style.margin = '0 3px'
+            // day1PrayerParagEl.style.lineHeight = '1.5px'
+
+
+            let prayerSaveButtonEl = document.createElement('button')
+            prayerSaveButtonEl.classList.add('save')
+            saveButtonText = document.createTextNode('Save')
+            prayerSaveButtonEl.appendChild(saveButtonText)
+
+            // Apply Styles to the share button
+            prayerSaveButtonEl.style.borderRadius = '15px'
+            prayerSaveButtonEl.style.color = "#f5f6fa"
+            prayerSaveButtonEl.style.background = "#5dc2b8"
+            prayerSaveButtonEl.style.margin = "5px 5px"
+            prayerSaveButtonEl.style.padding = "3px"
+            prayerSaveButtonEl.style.textAlign = 'center'
+            prayerSaveButtonEl.style.width = '15%'
+            prayerSaveButtonEl.style.fontSize = '1rem'
+            prayerSaveButtonEl.style.marginTop = '10px'
+            prayerSaveButtonEl.style.float = 'left'
+
+
+
+            let prayerShareButtonEl = document.createElement('button')
+            prayerShareButtonEl.classList.add('share')
+            shareButtonText = document.createTextNode('Share')
+            prayerShareButtonEl.appendChild(shareButtonText)
+
+            // Apply Styles to the share button
+            prayerShareButtonEl.style.borderRadius = '15px'
+            prayerShareButtonEl.style.color = "#f5f6fa"
+            prayerShareButtonEl.style.background = "orange"
+            prayerShareButtonEl.style.margin = "5px 5px"
+            prayerShareButtonEl.style.padding = "3px"
+            prayerShareButtonEl.style.textAlign = 'center'
+            prayerShareButtonEl.style.width = '15%'
+            prayerShareButtonEl.style.fontSize = '1rem'
+            prayerShareButtonEl.style.marginTop = '10px'
+            prayerShareButtonEl.style.float = 'left'
+
+            // Visit our website button
+            
+            let visitOurWebsiteButtonEl = document.createElement('button')
+            visitOurWebsiteButtonEl.classList.add('visit-our-website')
+            visitOurWebsiteButtonText = document.createTextNode('Visit our Website')
+            visitOurWebsiteButtonEl.appendChild(visitOurWebsiteButtonText)
+
+            // Apply Styles to the share button
+            visitOurWebsiteButtonEl.style.borderRadius = '15px'
+            visitOurWebsiteButtonEl.style.color = "#f5f6fa"
+            visitOurWebsiteButtonEl.style.background = "green"
+            visitOurWebsiteButtonEl.style.margin = "5px 5px"
+            visitOurWebsiteButtonEl.style.padding = "3px"
+            visitOurWebsiteButtonEl.style.textAlign = 'center'
+            visitOurWebsiteButtonEl.style.width = '40%'
+            visitOurWebsiteButtonEl.style.fontSize = '1rem'
+            visitOurWebsiteButtonEl.style.marginTop = '10px'
+            visitOurWebsiteButtonEl.style.float = 'left'
+
+            day1Prayer.appendChild(day1PrayerScriptureEl);
+            day1Prayer.appendChild(purposeEl);
+            day1Prayer.appendChild(day1PrayerParagEl);
+            day1Prayer.appendChild(prayerSaveButtonEl)
+            day1Prayer.appendChild(prayerShareButtonEl);
+            day1Prayer.appendChild(visitOurWebsiteButtonEl)
+
+            cardContainer.appendChild(day1Prayer)
+        }
+
+    </script>
+</body>
+</html>
