@@ -1,5 +1,39 @@
 let dailyCards = document.getElementById("prayer-cards")
 
+// 080124
+let div080124ElPrayer = document.createElement('div');
+div080124ElPrayer.style.textAlign = "center";
+
+let scripture080124 = document.createElement('h2')
+scriptureText = document.createTextNode("Oh, clap your hands, all you people! Shout to God with the voice of triumph! For the Lord Most High is  awesome; He is a great King over all the earth. He will subdue the peoples under us, and the nations under our feet. He will choose our inheritance for us, the excellence of Jacob whom He loves. Selah. (Psalm 47:1-4)");
+scripture080124.appendChild(scriptureText)
+
+let purpose080124 = document.createElement('h1')
+purposeText = document.createTextNode('PRAYER');
+purpose080124.appendChild(purposeText);
+
+let prayerParag080124 = document.createElement('p');
+prayerText = document.createTextNode("With a voice of triumph, I praise Your name O, Father. For You alone is King over all the earth. Subdue every strong man before us O Lord, and choose our inheritance for us for our manifestation. Establish our feets, and let not our enemies rejoice over our; for in You alone is our trust for victory from everlasting to everlasting in Jesus name, Amen!");
+prayerParag080124.appendChild(prayerText);
+
+let shareButton080124 = document.createElement('button');
+buttonText = document.createTextNode('Share')
+shareButton080124.style.marginBottom = "30px";
+shareButton080124.style.color = "#f5f6fa"
+shareButton080124.style.background = "#5dc2b8";
+shareButton080124.style.borderRadius = "15px";
+shareButton080124.style.margin = "5px 5px"
+shareButton080124.style.padding = "3px"
+shareButton080124.style.width = "3%";
+shareButton080124.style.fontSize = "1rem"
+
+div080124ElPrayer.appendChild(scripture080124)
+div080124ElPrayer.appendChild(purpose080124);
+div080124ElPrayer.appendChild(prayerParag080124)
+div080124ElPrayer.appendChild(shareButton080124)
+
+document.body.appendChild(div080124ElPrayer)
+
 
 // 070124 
 let sundayPrayerDiv070124 = document.createElement("div");
@@ -23,9 +57,7 @@ prayerParag070124.appendChild(prayerText);
 let shareButton070124 = document.createElement("button");
 shareButton070124.classList.add("share")
 shareButton070124.innerText = "Share",
-console.log('test')
 shareButton070124.style.marginBottom = "30px";
-console.log('test')
 shareButton070124.style.color = "#f5f6fa"
 shareButton070124.style.background = "#5dc2b8";
 shareButton070124.style.borderRadius = "15px";
