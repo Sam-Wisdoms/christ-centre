@@ -5,6 +5,7 @@ let countryEl = document.getElementById("country")
 let contactEl = document.getElementById("contact")
 let textEl = document.getElementById("text")
 
+
 function prayerRequest(e){
     e.preventDefault()
 

@@ -1,4 +1,92 @@
-let dailyCards = document.getElementById("prayer-cards")
+//110124
+let prayer110124Div = document.createElement('div');
+prayer110124Div.style.textAlign = 'center';
+
+let scripture110124El = document.createElement('h2');
+scriptureText = document.createTextNode('Then the fire of the Lord fell and consumed the burnt sacrifice, and the wood and the stones and the dust, and it licked up the water that was in the trench. Now when all the people saw it, they fell on their faces; and they said,  "The Lord He is God! The Lord, He is God!" (1 Kings  18:37-38)');
+scripture110124El.appendChild(scriptureText);
+
+
+let purpose110124El =document.createElement('h1');
+purposeText = document.createTextNode('PRAYER');
+purpose110124El.appendChild(purposeText);
+
+let prayerParag110124El = document.createElement('p');
+prayerText = document.createTextNode("You are God and there is none beside You Lord. At the metion of Your name, the lame walk, the blind see, sicknesses disappear, Pharaoh and his army got drowned in the sea of reed, and the ungodly surrender their lives to Your Authority. This is my prayer today O Father, let Your Word, speak to the hearts of them that still walk in darkness and are been used by the devil and are under the influence of satanic manipulation.Have mercy on them O Lord and deliver them from their ungodly ways, that they may come to the salvation of Your light in Jesus Mighty Name, Amen.");
+prayerParag110124El.appendChild(prayerText);
+
+let shareButton110124El = document.createElement('button');
+buttonText = document.createTextNode('Share');
+shareButton110124El.appendChild(buttonText);
+
+prayer110124Div.appendChild(scripture110124El);
+prayer110124Div.appendChild(purpose110124El)
+prayer110124Div.appendChild(prayerParag110124El);
+prayer110124Div.appendChild(shareButton110124El);
+
+
+document.body.appendChild(prayer110124Div)
+
+
+// 100124
+let prayer100124Div = document.createElement('div');
+prayer100124Div.style.textAlign = 'center';
+
+let scripture100124El = document.createElement('h2');
+scriptureText = document.createTextNode('Then Asa cried out to the Lord his God: "Lord, there is no one besides You to help the mighty and those without strength. Help us, Lord, our God, for we depend on You, and in Your name, we have come against this multitude. Lord, You are our God. Do not let a mere mortal hinder You. (2 Chronicles 14:11)');
+scripture100124El.appendChild(scriptureText);
+
+
+let purpose100124El =document.createElement('h1');
+purposeText = document.createTextNode('PRAYER');
+purpose100124El.appendChild(purposeText);
+
+let prayerParag100124El = document.createElement('p');
+prayerText = document.createTextNode("There is none beside you O Lord! For all power in heaven and on earth belong to You alone and at the mention of Your name, every knee bow to Your authority, and every tongue shall confess Your might. Help us, O Lord our God, for we depend on You. In Your name, we have come against every wicked man and their army. You are our God, the One in whom we put our trust in all circumstances for victory. Cause us to prevail O Lord, and let not a mere mortal hinder You. Thank You, dear Lord Jesus, Amen.");
+prayerParag100124El.appendChild(prayerText);
+
+let shareButton100124El = document.createElement('button');
+buttonText = document.createTextNode('Share');
+shareButton100124El.appendChild(buttonText);
+
+prayer100124Div.appendChild(scripture100124El);
+prayer100124Div.appendChild(purpose100124El)
+prayer100124Div.appendChild(prayerParag100124El);
+prayer100124Div.appendChild(shareButton100124El);
+
+
+document.body.appendChild(prayer100124Div)
+
+// 090124
+let div090124ElPrayer = document.createElement('div');
+div090124ElPrayer.style.textAlign = 'center';
+
+let scripture090124 = document.createElement('h2')
+scriptureText = document.createTextNode('But the hand of the Lord was heavy on the people of Ashdod, and He ravaged them and struck them with tumors, both Ashdod and its territory. And when the men of Ashdod saw how it was, they said, "The ark of the God of Israel must not remain with us, for His hand is harsh toward us and Dagon our god." ( 1 Samuel 5 : 6 - 7)')
+scripture090124.appendChild(scriptureText)
+
+let purpose090124 = document.createElement('h1');
+purposeText = document.createTextNode('PRAYER');
+purpose090124.appendChild(purposeText)
+
+let prayerParag090124 = document.createElement('p');
+prayerText = document.createTextNode("King of kings and Lord of lords, let your hand be mighty upon anyone who wishes and seeks evil for your children. And let any priest that has been contracted for evil against Your children fall flat like Dagon before the ark of God. This I declare O Lord, that affliction and evil shall not befall the household of Your children in Jesus' Mighty Name, Amen.")
+prayerParag090124.appendChild(prayerText);
+
+let shareButton090124 = document.createElement('button');
+buttonText = document.createTextNode('Share');
+shareButton090124.appendChild(buttonText)
+
+div090124ElPrayer.appendChild(scripture090124) 
+div090124ElPrayer.appendChild(purpose090124) 
+div090124ElPrayer.appendChild(prayerParag090124)
+div090124ElPrayer.appendChild(shareButton090124)
+
+document.body.appendChild(div090124ElPrayer)
+
+
+
+//let dailyCards = document.getElementById("prayer-cards")
 
 // 080124
 let div080124ElPrayer = document.createElement('div');

@@ -12,8 +12,8 @@
         <hr>
         <h3>Are there issues you need prayer support about? We are glad to support. Please let us know what we can support with in the contact form below.</h3>
         <hr>
-        <form action="" class="request-form">
-            <input type="text" id="name" class="request-form-text" placeholder="Your name">
+        <form onsubmit="prayerRequest()" action="https://api.web3forms.com/submit" method="POST" class="request-form">
+            <input type="hidden" id="name" name="access_key" class="request-form-text" value="e7eb55fa-bf4f-42bd-a076-969c8de7e480" placeholder="Your name">
             <input type="text" id="email" class="request-form-text" placeholder="Email Address">
             <input type="text" id="country" class="request-form-text" placeholder="Country of Residence">
             <input type="text" id="contact" class="request-form-text" placeholder="Phone Number">
@@ -23,6 +23,15 @@
 
         </div>
     </div>
+<!-- 
+    <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="e7eb55fa-bf4f-42bd-a076-969c8de7e480">
+        <input type="text" name="name" required>
+        <input type="email" name="email" required>
+        <input type="phone" name="phone" required>
+        <textarea name="message" required></textarea>
+        <button type="submit">Submit</button>
+    </form> -->
     <script src="https://smtpjs.com/v3/smtp.js">
 </script>
     <script src="./js/request.js"></script>

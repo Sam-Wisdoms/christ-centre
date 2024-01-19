@@ -8,14 +8,17 @@
 <body>
 
     <script>
-        function shareOnWhatsApp(text) {
-            var whatsappUrl = 'https://api.whatsapp.com/send?text=' + encodeURIComponent(text);
-            window.open(whatsappUrl, '_blank');
-        }
-
-        function shareOnFacebook(text) {
-            var facebookUrl = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(text);
-            window.open(facebookUrl, '_blank');
+        function sharePrayer(text) {
+            if (navigator.share) {
+                navigator.share({
+                    text: text,
+                })
+                .then(() => console.log('Prayer shared successfully'))
+                .catch((error) => console.error('Error sharing prayer:', error));
+            } else {
+                // Fallback for browsers that do not support the Web Share API
+                alert('Sharing is not supported on this browser.');
+            }
         }
 
         function createPrayerCard(scripture, purpose, prayerText) {
@@ -34,7 +37,7 @@
             let shareButtonEl = document.createElement('button');
             shareButtonEl.appendChild(document.createTextNode('Share'));
             shareButtonEl.addEventListener('click', function() {
-                shareOnWhatsApp(prayerText); // You can choose to share on Facebook as well
+                sharePrayer(prayerText);
             });
 
             prayerDiv.appendChild(scriptureEl);
