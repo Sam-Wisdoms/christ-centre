@@ -1,3 +1,34 @@
+// 120124
+let prayer120124Div = document.createElement('div');
+prayer120124Div.style.textAlign = "center";
+
+let scripture120124El = document.createElement("h2");
+scriptureText = document.createTextNode('He frustrates the devices of the crafty, so that their hands cannot carry out their plans. (Job 5 : 12)')
+scripture120124El.appendChild(scriptureText)
+
+let purpose120124 = document.createElement("h1")
+purposeText = document.createTextNode("PRAYER")
+purpose120124.appendChild(purposeText)
+
+let prayerParag120124El = document.createElement("p")
+prayerParagText = document.createTextNode("Lift up Your hands O Lord, and deliver Your children from the devices of the crafty. Frustrate their schemes Father, that they may not be able to execute their evil plans. In this year, O Lord, help us to seek You more and more, cause us to grow in the knowledge and wisdom of Your Word; and as we do, surround us with Your armor and Your shield of protection, that we may not be victims of satanic manipulation. Thank You, dear Lord Jesus, Amen.")
+prayerParag120124El.appendChild(prayerParagText)
+
+let shareButton120124El = document.createElement("button")
+buttonText = document.createTextNode('Share')
+shareButton120124El.appendChild(buttonText)
+
+prayer120124Div.appendChild(scripture120124El)
+prayer120124Div.appendChild(purpose120124)
+prayer120124Div.appendChild(prayerParag120124El)
+prayer120124Div.appendChild(shareButton120124El)
+
+document.body.appendChild(prayer120124Div)
+
+
+
+
+
 //110124
 let prayer110124Div = document.createElement('div');
 prayer110124Div.style.textAlign = 'center';
